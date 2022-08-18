@@ -32,6 +32,13 @@ h1 {
   font-weight: bold;
 }
 
+h1:hover {
+  transform: scale(1.05);
+  color: aqua;
+  text-shadow: 1.5px 1.5px 5px aquamarine;
+  transition: 1s;
+}
+
 .nav {
   background-color: magenta;
 }
