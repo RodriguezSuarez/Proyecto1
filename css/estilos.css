@@ -10,7 +10,7 @@ font-family: 'Roboto', sans-serif; */
 
 .home {
   background-color: black;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
 
@@ -28,7 +28,7 @@ font-family: 'Roboto', sans-serif; */
 
 h1 {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
 }
 
@@ -38,6 +38,7 @@ h1 {
 
 .main {
   background-color: greenyellow;
+  height: 50vh;
 }
 
 .aside {
@@ -50,4 +51,11 @@ ul {
 
 .footer {
   background-color: orangered;
+  text-align: center;
+}
+
+.redes i {
+  letter-spacing: 20px;
+  font-size: 40px;
+  margin: 10px 0 10px;
 }
