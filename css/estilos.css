@@ -26,6 +26,11 @@ font-family: 'Roboto', sans-serif; */
   width: 96px;
 }
 
+.logo:hover {
+  transform: rotatey(360deg);
+  transition: 1s;
+}
+
 h1 {
   margin: 0;
   font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
