@@ -49,8 +49,7 @@ h1:hover {
 }
 
 .main {
-  background-color: greenyellow;
-  height: 50vh;
+  background-color: green;
 }
 
 .aside {
@@ -67,6 +66,7 @@ ul {
 }
 
 .redes i {
+  color: #000;
   letter-spacing: 20px;
   font-size: 40px;
   margin: 10px 0 10px;
