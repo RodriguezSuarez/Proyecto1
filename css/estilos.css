@@ -79,6 +79,9 @@ h6 {
   text-align: center;
   color: turquoise;
   text-shadow: 1px 1px 3px aquamarine;
+  background-image: linear-gradient(#000, #333, #000);
+  border-radius: 50px;
+  padding: 10px;
 }
 
 /*carusel*/
@@ -111,8 +114,8 @@ marquee {
 
 .footer {
   background: transparent;
-  /* background-image: linear-gradient(gold, orangered); */
   text-align: center;
+  padding: 0;
 }
 
 .redes i {
@@ -145,7 +148,6 @@ marquee {
 .main .csection {
   text-align: center;
   color: turquoise;
-
 }
 
 .select:focus,
@@ -217,3 +219,15 @@ fieldset .buttom {
 }
 
 /*agencia*/
+
+.asection {
+  padding: 40px;
+  text-align: center;
+}
+
+.aarticle {
+  background-image: linear-gradient(#222, #555, #222);
+  text-align: justify;
+  padding: 20px;
+  border-radius: 25px;
+}
