@@ -1,95 +1,173 @@
+<!--declaracion documento tipo -->
 <!DOCTYPE html>
+<!--apertura html atributo de idioma-->
 <html lang="es-ES">
 
+<!--cabeza apertura-->
+
 <head>
+  <!--codificacion tipo-->
   <meta charset="UTF-8">
+  <!--compatibilidad navegador-->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--compatibilidad tamaño diferentes dispositivos-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Proyecto1</title>
+  <!--icono pestaña o cabecera del navegador-->
+  <link rel="shortcut icon" href="./images/icono(svg144x144).svg" type="image/x-icon">
+  <!--responsive carga <link rel="icon" href="./images/icono.png" sizes="32/48/96/144x144"> -->
+  <!--titulo pestaña o cabecera navegador-->
+  <title>Ramiro Producciones</title>
+  <!--metadatos para buscadores web...-->
   <meta name="author" content="DMRS">
   <meta name="description" content="Servicios exclusivos para eventos sociales: fiestas, graduaciones y muchos más">
   <meta name="keywords"
     content="eventos sociales, cumpleaños, despedidas, egresados, fiestas, música, shows, iluminación, efectos especiales, juegos">
+  <!--link web fontawesome (paquete iconos)-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
     integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--link web bootstrap.min.css-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <!--link pagina bootstrap.min.css-->
   <!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
-  <link rel="stylesheet" href="./css/estilos.css" type="text/css">
+  <!--link pagina bootstrap-multiselect.min.css-->
+  <!-- <link rel="stylesheet" href="./css/bootstrap-multiselect.min.css"> -->
+  <!--link pagina estilos.css-->
+  <link rel="stylesheet" href="./css/estilos.css" type="text/css" />
 </head>
 
 <body class="home row">
-  <header class="header container-fluid col-xs-12">
-    <img src="./images/logo.gif" alt="logo dj ramiro producciones" class="logo">
-    <h1 class="titulo text-center">
-      Ramiro Producciones
-    </h1>
-  </header>
-
-  <nav class="nav navbar navbar-expand-md  navbar-dark">
-    <a class="navbar-brand" href="#">Mas Info --></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link1</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link3</a>
-        </li>
-      </ul>
+  <!--audio fondo pagina -->
+  <!-- <audio autoplay loop>su navegador no soporta algunos formatos de audio -->
+  <source src="./multimedias/electronica-edm.ogg" type="audio/ogg">
+  <source src="./multimedias/electronica-edm.wav" type="audio/wav">
+  <!--formatos audio (.ogg, .wav, .mp3, etc.) soporte compatibilidad navegador-->
+  </audio>
+  <!--cabecera pagina-->
+  <header class="header">
+    <!--logo y titulo cabecera pagina-->
+    <div class="encabezado container-fluid col-xs-12">
+      <img src="./images/logo.gif" alt="logo dj ramiro producciones" class="logo">
+      <h1 class="titulo">ramiro producciones</h1>
     </div>
-  </nav>
-  <main class="main container-fluid col-xs-12 col-md-8">
+    <!--navegacion barra-->
+    <nav class="nav navbar navbar-expand-md  navbar-dark">
+      <a class="navbar-brand" href="./pages/contacto.html">Mas Info --></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/agencia.html">Agencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="main">
+      <div class="order">
+        <!-- carousel -->
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ul class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+          </ul>
+          <!-- The slideshow -->
+          <div class="carousel-inner">
+            <div class="carousel-item  active">
+              <img src="./images/canon.png" alt="RobotLed">
+              <!-- <div class="carousel-caption">
+          <h3>Los Angeles</h3>
+          <p>We had such a great time in LA!</p>
+        </div> -->
+            </div>
+            <div class="carousel-item">
+              <img src="./images/canon1.png" alt="RobotLed1">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/canon2.png" alt="RobotLed2">
+            </div>
+          </div>
+          <!-- Left and right controls -->
+          <a class="carousel-control-prev" href="#carousel" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#carousel" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+        <!--marquesina x 3-->
+        <div class="marquee">
+          <marquee id="marq1" behavior="alternate" direction="down" width="100%" height="33.3%">
+            <marquee behavior="alternate"><strong>SÓLO PENSAMOS EN CÓMO</strong>
+            </marquee>
+          </marquee>
+          <marquee id="marq2" behavior="alternate" direction="down" width="100%" height="33.3%">
+            <marquee behavior="alternate"><strong>TU FIESTA SERÁ ÚNICA!!!</strong>
+            </marquee>
+          </marquee>
+          <marquee id="marq3" behavior="alternate" direction="down" width="100%" height="33.3%">
+            <marquee behavior="alternate"><strong>NO TE LO PODÉS PERDER</strong>
+            </marquee>
+          </marquee>
+        </div>
+      </div>
+    </main>
+    <!-- <main class="main container-fluid col-xs-12 col-md-8">
     <h2 class="text-center">TITULO SECTION<h2>
         <article class="text-justify">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit rerum vero fuga necessitatibus iusto nobis
           esse ratione fugiat, quisquam, exercitationem autem reiciendis eaque architecto iure quasi hic debitis
           modi excepturi?</article>
-  </main>
-  <aside class="aside container-fluid col-xs-12 col-md-4">
+  </main> -->
+    <!-- <aside class="aside container-fluid col-xs-12 col-md-4">
     <ul class="text-center">
       <li>LISTA 1</li>
       <li>LISTA 2</li>
       <li>LISTA 3</li>
     </ul>
-  </aside>
-  </div>
-  <footer class="footer container-fluid col-xs-12">
-    <p>
-      No busques más, tenemos tu solución<br>con increibles servicios y facilidades de pago
-    </p>
-    <div class="redes">
-      <a href="https://www.youtube.com/channel/UCy_nXlltVL_Nfp0CvFLyLNg
+  </aside> -->
+    <footer class="footer container-fluid col-xs-12">
+      <p>
+        No busques más, tenemos tu solución<br>con increibles servicios y facilidades de pago
+      </p>
+      <div class="redes">
+        <a href="https://www.youtube.com/channel/UCy_nXlltVL_Nfp0CvFLyLNg
             " title="sitio youtube" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
-      <a href="https://www.instagram.com/accounts/login/?next=/djramiroeventos/
+        <a href="https://www.instagram.com/accounts/login/?next=/djramiroeventos/
             " title="sitio instagram" target="_blank" rel="noopener noreferrer"><i
-          class="fa-brands fa-instagram"></i></a>
-      <a href="https://www.facebook.com/ramiro.palacios.568847" title="sitio facebook" target="_blank"
-        rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
-    </div>
-    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
-      <img alt="Creative Commons License" style="border-width:0"
-        src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
-      Licencia Internacional Creative Commons Attribution 4.0
-    </a>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
-    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
-    crossorigin="anonymous"></script>
-  <!-- <link rel="stylesheet" href="./js/bootstrap.min.js"> -->
+            class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/ramiro.palacios.568847" title="sitio facebook" target="_blank"
+          rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+      <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+        <img alt="Creative Commons License" style="border-width:0"
+          src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
+        Licencia Internacional Creative Commons Attribution 4.0
+      </a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="./js/bootstrap.min.js"> -->
 </body>
 
 </html>
