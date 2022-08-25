@@ -29,6 +29,7 @@ h4,
 h5,
 h6 {
   font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
 }
 
 .header {
@@ -115,7 +116,7 @@ marquee {
 .footer {
   background: transparent;
   text-align: center;
-  padding: 0;
+  padding: 10px;
 }
 
 .redes i {
@@ -220,14 +221,100 @@ fieldset .buttom {
 
 /*agencia*/
 
-.asection {
-  padding: 40px;
+.asection,
+.ssection {
   text-align: center;
 }
 
-.aarticle {
+.aarticle,
+.sarticle {
   background-image: linear-gradient(#222, #555, #222);
   text-align: justify;
   padding: 20px;
   border-radius: 25px;
+  box-shadow: 0 1.5px 3px 3px turquoise;
+}
+
+.video {
+  padding: 10px;
+}
+
+/*servicios*/
+.galeria1,
+.galeria2 {
+  width: 100%;
+  height: auto;
+  background-color: #000;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(2, 300px);
+  grid-gap: 20px;
+}
+
+.item {
+  border: 5px solid aquamarine;
+  width: 100%;
+  box-shadow: 3px 3px 5px aqua;
+  filter: sepia(100%);
+}
+
+.item:hover {
+  filter: none;
+  transform: scale(1.01);
+  transition: all 0.7s;
+}
+
+.galeria1 .item,
+.galeria2 .item {
+  background-size: cover;
+  background-position: center;
+}
+
+.galeria1 .item1 {
+  background-image: url(../images/07.jpeg);
+}
+
+.galeria1 .item2 {
+  background-image: url(../images/09.jpeg);
+}
+
+.galeria1 .item3 {
+  background-image: url(../images/estructura2.jpg);
+}
+
+.galeria1 .item4 {
+  background-image: url(../images/musica1.jpg);
+}
+
+.galeria1 .item5 {
+  background-image: url(../images/musica3.jpg);
+}
+
+.galeria1 .item6 {
+  background-image: url(../images/estructura.jpeg);
+}
+
+.galeria2 .item1 {
+  background-image: url(../images/fiestaled10.jpg);
+}
+
+.galeria2 .item2 {
+  background-image: url(../images/fiestaled2.jpg);
+}
+
+.galeria2 .item3 {
+  background-image: url(../images/fiestaled11.jpg);
+}
+
+.galeria2 .item4 {
+  background-image: url(../images/fiestaled3.jpg);
+}
+
+.galeria2 .item5 {
+  background-image: url(../images/fiestaled13.jpg);
+}
+
+.galeria2 .item6 {
+  background-image: url(../images/fiestaled14.jpg);
 }
